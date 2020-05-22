@@ -35,5 +35,19 @@ namespace WebApplication2.Controllers
             })
             .ToArray();
         }
+
+        [HttpGet]
+        public EmployeeDetails Get(string Name)
+        {
+            EmployeeDetails employeeDetails = new EmployeeDetails();
+            employeeDetails.Name = Name;
+            employeeDetails.City = "San Ramon";
+            employeeDetails.Address = "2925 Sombrero Cir";
+            employeeDetails.State = "CA";
+            employeeDetails.Country = "USA";
+
+            return employeeDetails;
+
+        }
     }
 }
