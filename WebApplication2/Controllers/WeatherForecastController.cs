@@ -36,11 +36,12 @@ namespace WebApplication2.Controllers
             .ToArray();
         }
 
+        [Route("[action]/{name}")]
         [HttpGet]
-        public EmployeeDetails Get(string Name)
+        public EmployeeDetails Get(string name)
         {
             EmployeeDetails employeeDetails = new EmployeeDetails();
-            employeeDetails.Name = Name;
+            employeeDetails.Name = name;
             employeeDetails.City = "San Ramon";
             employeeDetails.Address = "2925 Sombrero Cir";
             employeeDetails.State = "CA";
