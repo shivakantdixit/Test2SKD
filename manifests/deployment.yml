@@ -1,0 +1,16 @@
+apiVersion : apps/v1beta1
+kind: Deployment
+metadata:
+  name: shivakantdixittestskd 
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: shivakantdixittestskd 
+    spec:
+      containers:
+        - name: shivakantdixittestskd 
+          image: skdcr.azurecr.io/shivakantdixittestskd
+          ports:
+          - containerPort: 80
