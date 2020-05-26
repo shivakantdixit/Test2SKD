@@ -16,4 +16,19 @@ namespace WebApplication2
 
         public string Country  { get; set; }
     }
+
+    public class PersonDetails
+    {
+        public string HusbandName { get; set; }
+
+        public DateTime Marriage { get; set; }
+
+        public string FirstMet { get; set; }
+
+        public string Statement { get; set; }
+
+        public string Secret { get; set; }
+    }
+
+
 }

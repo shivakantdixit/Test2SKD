@@ -50,5 +50,26 @@ namespace WebApplication2.Controllers
             return employeeDetails;
 
         }
+
+        [Route("[action]/{name}")]
+        [HttpGet]
+        public PersonDetails GetDetails(string name)
+        {
+            PersonDetails employeeDetails = new PersonDetails();
+            employeeDetails.HusbandName = "Jay";
+            employeeDetails.FirstMet = "Kerala";
+            employeeDetails.Marriage = Convert.ToDateTime("01-01-2017") ;
+            employeeDetails.Statement = "Joru ka gulam";
+            employeeDetails.Secret = "google.com";
+
+            //employeeDetails.HusbandName = "Jay";
+            //employeeDetails.FirstMet = "Kerala";
+            //employeeDetails.Marriage = Convert.ToDateTime("01-01-2017");
+            //employeeDetails.Statement = "Joru ka gulam";
+            //employeeDetails.Secret = "google.com";
+
+            return employeeDetails;
+
+        }
     }
 }
