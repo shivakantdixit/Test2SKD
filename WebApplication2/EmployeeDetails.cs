@@ -19,15 +19,15 @@ namespace WebApplication2
 
     public class PersonDetails
     {
-        public string HusbandName { get; set; }
+        public string PlaceOfBirth { get; set; }
 
-        public DateTime Marriage { get; set; }
+        public DateTime DOB { get; set; }
 
-        public string FirstMet { get; set; }
+        public string Nationality { get; set; }
 
-        public string Statement { get; set; }
+        public string Phone { get; set; }
 
-        public string Secret { get; set; }
+        public string Name { get; set; }
     }
 
 

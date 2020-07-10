@@ -62,11 +62,11 @@ namespace WebApplication2.Controllers
             //employeeDetails.Statement = "Joru ka gulam";
             //employeeDetails.Secret = "google.com";
 
-            employeeDetails.HusbandName = "Shiva-- Current husband";
-            employeeDetails.FirstMet = "Safeway 03-18-2018";
-            employeeDetails.Marriage = Convert.ToDateTime("01-19-19");
-            employeeDetails.Statement = "Shiva loves " + name;
-            employeeDetails.Secret = name + " is  married to one moran";
+            employeeDetails.PlaceOfBirth = "San Francisco";
+            employeeDetails.Nationality = "American";
+            employeeDetails.DOB = Convert.ToDateTime("01-19-19");
+            employeeDetails.Phone = "6505541839";
+            employeeDetails.Name = name + " is  calling the API.";
 
             return employeeDetails;
 
