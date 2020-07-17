@@ -7,8 +7,7 @@ spec:
  selector:
     matchLabels:
       name: shivakantdixittestskd
-  
-  template:
+ template:
     metadata:
       labels:
         app: shivakantdixittestskd 
