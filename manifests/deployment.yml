@@ -3,10 +3,11 @@ kind: Deployment
 metadata:
   name: shivakantdixittestskd 
 spec:
+ replicas: 1
  selector:
     matchLabels:
       name: shivakantdixittestskd
-  replicas: 1
+  
   template:
     metadata:
       labels:
