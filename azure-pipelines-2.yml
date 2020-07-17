@@ -11,12 +11,12 @@ resources:
 variables:
 
   # Container registry service connection established during pipeline creation
-  dockerRegistryServiceConnection: 'a9470685-a920-4813-8d71-373722340b84'
+  dockerRegistryServiceConnection: 'a1e2bcb3-1b67-4cf0-9445-503cc1df18ce'
   imageRepository: 'shivakantdixittestskd'
   containerRegistry: 'cr070920.azurecr.io'
   dockerfilePath: '**/Dockerfile'
   tag: '$(Build.BuildId)'
-  imagePullSecret: 'skdcr90349c99-auth'
+  imagePullSecret: 'cr0709201235375e-auth'
 
   # Agent VM image name
   vmImageName: 'ubuntu-latest'
@@ -53,7 +53,7 @@ stages:
     displayName: Deploy
     pool:
       vmImage: $(vmImageName)
-    environment: 'shivakantdixitTest2SKD.skdaz'
+    environment: 'shivakantdixitTest2SKD-1692.default'
     strategy:
       runOnce:
         deploy:
