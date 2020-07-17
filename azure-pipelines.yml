@@ -13,7 +13,7 @@ variables:
   # Container registry service connection established during pipeline creation
   dockerRegistryServiceConnection: 'a9470685-a920-4813-8d71-373722340b84'
   imageRepository: 'shivakantdixittestskd'
-  containerRegistry: 'skdcr.azurecr.io'
+  containerRegistry: 'cr070920.azurecr.io'
   dockerfilePath: '**/Dockerfile'
   tag: '$(Build.BuildId)'
   imagePullSecret: 'skdcr90349c99-auth'
