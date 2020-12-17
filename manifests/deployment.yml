@@ -1,10 +1,13 @@
-apiVersion : apps/v1beta1
+apiVersion : apps/v1
 kind: Deployment
 metadata:
   name: shivakantdixittestskd 
 spec:
-  replicas: 1
-  template:
+ replicas: 1
+ selector:
+    matchLabels:
+      name: shivakantdixittestskd
+ template:
     metadata:
       labels:
         app: shivakantdixittestskd 
