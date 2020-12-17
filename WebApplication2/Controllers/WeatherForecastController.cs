@@ -56,12 +56,6 @@ namespace WebApplication2.Controllers
         public PersonDetails GetDetails(string name)
         {
             PersonDetails employeeDetails = new PersonDetails();
-            //employeeDetails.HusbandName = "Jay";
-            //employeeDetails.FirstMet = "Kerala";
-            //employeeDetails.Marriage = Convert.ToDateTime("01-01-2017") ;
-            //employeeDetails.Statement = "Joru ka gulam";
-            //employeeDetails.Secret = "google.com";
-
             employeeDetails.PlaceOfBirth = "San Francisco";
             employeeDetails.Nationality = "American";
             employeeDetails.DOB = Convert.ToDateTime("01-19-19");
